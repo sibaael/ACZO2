@@ -16,7 +16,7 @@
 4. Menu
 5. Home
 6. Contact
-7. Footer
+
 
 
 ******************************/
@@ -1147,108 +1147,3 @@ section
 	height: calc(100% + 30px);
 }
 
-/*********************************
-7. Footer
-*********************************/
-
-.footer
-{
-	width: 100%;
-	background: #f2f1f8;
-	padding-top: 108px;
-	padding-bottom: 90px;
-}
-.footer .logo_container
-{
-	position: absolute;
-	top: -10px;
-	left: 0;
-}
-.footer_about_text
-{
-	padding-top: 49px;
-}
-.footer_social
-{
-	margin-top: 22px;
-}
-.footer_social ul li
-{
-	display: inline-block;
-}
-.footer_social ul li:not(:last-child)
-{
-	margin-right: 24px;
-}
-.footer_social ul li a i
-{
-	font-size: 16px;
-	color: #ff6600;
-	-webkit-transition: all 200ms ease;
-	-moz-transition: all 200ms ease;
-	-ms-transition: all 200ms ease;
-	-o-transition: all 200ms ease;
-	transition: all 200ms ease;
-}
-.footer_social ul li a i:hover
-{
-	color: #ffae00;
-}
-.copyright
-{
-	font-size: 12px;
-	font-weight: 500;
-	color: #b3b3b3;
-	margin-top: 70px;
-}
-.footer_title
-{
-	font-size: 18px;
-	font-weight: 600;
-	color: #44425a;
-}
-.footer_list
-{
-	margin-top: 26px;
-}
-.footer_list li:not(:last-child)
-{
-	margin-bottom: 15px;
-}
-.footer_list li a
-{
-	font-size: 14px;
-	font-weight: 500;
-	color: #6c6a74;
-	-webkit-transition: all 200ms ease;
-	-moz-transition: all 200ms ease;
-	-ms-transition: all 200ms ease;
-	-o-transition: all 200ms ease;
-	transition: all 200ms ease;
-}
-.footer_list li a:hover
-{
-	color: #ff8a00;
-}
-.footer_contact_info
-{
-	padding-right: 70px;
-	margin-top: 26px;
-}
-.footer_contact_item:not(:last-child)
-{
-	margin-bottom: 23px;
-}
-.footer_contact_title
-{
-	font-size: 14px;
-	font-weight: 500;
-	color: #ff6600;
-}
-.footer_contact_line
-{
-	font-size: 14px;
-	font-weight: 500;
-	color: #6c6a74;
-	margin-top: 3px;
-}
