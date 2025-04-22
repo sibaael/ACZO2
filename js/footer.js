@@ -16,7 +16,7 @@ $(document).ready(function()
 
 
 	function setFooter() {
-		$("#footerdiv").load("../footer.html"); 
+		$("#footerdiv").load("footer.html"); 
 	}
 
 });

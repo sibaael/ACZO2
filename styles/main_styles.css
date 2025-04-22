@@ -290,7 +290,7 @@ section
 {
 	font-size: 20px;
 	line-height: 47px;
-	color: #6EC474;
+	color: #ffffff;
 	-webkit-transition: all 200ms ease;
 	-moz-transition: all 200ms ease;
 	-ms-transition: all 200ms ease;
@@ -299,11 +299,11 @@ section
 }
 .button:hover
 {
-	background: #ACDDAF;
+	background: #ff6600;
 }
 .button:hover .button_arrow
 {
-	background: #1E4921;
+	background: #ff8a00;
 }
 .button:hover .button_arrow i
 {
@@ -1098,7 +1098,7 @@ section
 }
 .featured_tag:hover
 {
-	background: #2c2b31;
+	background: #ff6600;
 }
 .featured_tag a
 {
@@ -1348,7 +1348,7 @@ section
 }
 .course_tag:hover
 {
-	background: #203234;
+	background: #ff6600;
 }
 .course_tag a
 {
