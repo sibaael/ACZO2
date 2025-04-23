@@ -1044,6 +1044,30 @@ section
 	background: #59BB60;
 }
 
+.home_page
+{
+	width: 100%;
+	height: 430px;
+}
+.home_page_container
+{
+	position: absolute;
+	bottom: 92px;
+	left: 0;
+	width: 100%;
+}
+.home_page_content
+{
+
+}
+.home_page_title
+{
+	font-size: 48px;
+	font-weight: 600;
+	line-height: 0.75;
+	color: #FFFFFF;
+}
+
 /*********************************
 6. Featured Course
 *********************************/

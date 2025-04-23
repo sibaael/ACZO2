@@ -10,6 +10,7 @@
 <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 <link href="plugins/video-js/video-js.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="styles/news.css">
+<link rel="stylesheet" type="text/css" href="styles/main_styles.css">
 <link rel="stylesheet" type="text/css" href="styles/footer.css">
 <link rel="stylesheet" type="text/css" href="styles/news_responsive.css">
 </head>
@@ -57,41 +58,7 @@
 		</div>
 
 		<!-- Header Content -->
-		<div class="header_container">
-			<div class="container">
-				<div class="row">
-					<div class="col">
-						<div class="header_content d-flex flex-row align-items-center justify-content-start">
-							<div class="logo_container">
-								<a href="index.html">
-									<div class="logo_content d-flex flex-row align-items-end justify-content-start">
-										<div class="logo_img"><img src="images/logo.png" alt=""></div>
-										<div class="logo_text">ACZO</div>
-									</div>
-								</a>
-							</div>
-							<nav class="main_nav_contaner ml-auto">
-								<ul class="main_nav">
-									<li><a href="index.html">inicio</a></li>
-									<li><a href="about.html">Institucional</a></li>
-									<li><a href="courses.html">cursos</a></li>
-									<li class="active"><a href="news.html">noticias</a></li>
-									<li><a href="contact.html">contacto</a></li>
-								</ul>
-								<div class="search_button"><i class="fa fa-search" aria-hidden="true"></i></div>
-
-								<!-- Hamburger -->
-
-								<div class="hamburger menu_mm">
-									<i class="fa fa-bars menu_mm" aria-hidden="true"></i>
-								</div>
-							</nav>
-
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+		<div id="header_content"></div>
 
 		<!-- Header Search Panel -->
 		<div class="header_search_container">
@@ -150,10 +117,10 @@
 	
 	<!-- Home -->
 
-	<div class="home">
+	<div class="home_page">
 		<!-- Background image artist https://unsplash.com/@thepootphotographer -->
 		<div class="home_background parallax_background parallax-window" data-parallax="scroll" data-image-src="images/news.jpg" data-speed="0.8"></div>
-		<div class="home_container">
+		<div class="home_page_container">
 			<div class="container">
 				<div class="row">
 					<div class="col">
@@ -376,5 +343,6 @@
 <script src="plugins/parallax-js-master/parallax.min.js"></script>
 <script src="js/news.js"></script>
 <script src="js/footer.js"></script>
+<script src="js/header_content.js"></script>
 </body>
 </html>
