@@ -12,6 +12,7 @@
 <link rel="stylesheet" type="text/css" href="styles/courses.css">
 <link rel="stylesheet" type="text/css" href="styles/main_styles.css">
 <link rel="stylesheet" type="text/css" href="styles/footer.css">
+<link rel="stylesheet" type="text/css" href="styles/forms.css">
 <link rel="stylesheet" type="text/css" href="styles/courses_responsive.css">
 </head>
 <body>
@@ -147,41 +148,63 @@
 			<div class="row">
 				<div class="col-lg-6 featured_col">
 					<div class="featured_content">
-						<div class="featured_header d-flex flex-row align-items-center justify-content-start">
+						<!-- <div class="featured_header d-flex flex-row align-items-center justify-content-start">
 							<div class="featured_tag"><a href="#">Featured</a></div>
 							<div class="featured_price ml-auto">Price: <span>$35</span></div>
-						</div>
-						<div class="featured_title"><h3><a href="courses.html">Online Literature Course</a></h3></div>
-						<div class="featured_text">Maecenas rutrum viverra sapien sed fermentum. Morbi tempor odio eget lacus tempus pulvinar. Donec vehicula efficitur nibh, in pretium nulla interdum lacus vehicula efficitur nibh, in pretiumvehicula efficitur nibh, in pretium tempus non.</div>
+						</div> -->
+						<div class="featured_title"><h3><a href="courses.html">Curso de Cría y Cuidado de Aves Domésticase</a></h3></div>
+						<div class="featured_text">¡Inscripciones Abiertas! 🌟<br>
+							🔍 Detalles del Curso:<br>
+							✅ Metodología: Clases virtuales<br>
+							✅ Libre y gratuito<br>
+							✅ Aprende a criar y cuidar aves de manera responsable<br>
+							✅ Comienzo: Marzo 2025<br>
+							¡No dejes pasar esta oportunidad única de aprender y disfrutar! 🌈✨<br></div>
 						<div class="featured_footer d-flex align-items-center justify-content-start">
 							<div class="featured_author_image"><img src="images/featured_author.jpg" alt=""></div>
-							<div class="featured_author_name">By <a href="#">James S. Morrison</a></div>
-							<div class="featured_sales ml-auto"><span>352</span> Sales</div>
+							<div class="featured_author_name">Por <a href="#">Facundo Gallo</a></div>
+							<div class="featured_author_image"><img src="images/featured_author.jpg" alt=""></div>
+							<div class="featured_author_name"><a href="#">Roberto Nadal</a></div>
+							<div class="featured_author_image"><img src="images/featured_author.jpg" alt=""></div>
+							<div class="featured_author_name"><a href="#">Franco del Mauro</a></div>
+							<!-- <div class="featured_sales ml-auto"><span>352</span> Sales</div> -->
 						</div>
 					</div>
 				</div>
 				<div class="col-lg-6 featured_col">
 					<!-- Background image artist https://unsplash.com/@jtylernix -->
-					<div class="featured_background" style="background-image:url(images/featured.jpg)"></div>
+					<div class="featured_background" style="background-image:url(images/curso/curso_1_2025.jpeg)"></div>
 				</div>
 			</div>
 
-			<!-- FORMULARIO DE INSCRIPCION-->
-			<div class="row">
-				<div class="col">
-					<div class="course_search">
-						<div class="col-lg-10 offset-lg-1">
-							<div class="section_title text-center"><h2>Inscribite</h2></div>
-							<div class="section_subtitle">Llenando el siguiente formulario y enviándonos tus datos, te inscribiremos a este curso. Recibirás por WhatsApp la confirmación e información del curso.</div>
-						</div>
-						<form action="#" id="curso_actual_form" class="course_search_form d-flex flex-md-row flex-column align-items-start justify-content-between">
-							<div><input type="text" class="course_input" placeholder="Course" required="required"></div>
-							<div><input type="text" class="course_input" placeholder="Level" required="required"></div>
-							<button class="course_button"><span>inscribirme</span><span class="button_arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></span></button>
-						</form>
-					</div>
+			<div class="row courses_row" >
+				<div class="col-lg-10 offset-lg-1">
+					<div class="section_title text-center"><h2>inscribete</h2></div>
+					<div class="section_subtitle">llenando y enviándonos la información del siguiente formulario, te inscribirás a este curso y recibirás por WhatsApp la confirmación e información necesaria para acceder al curso. </div>
 				</div>
 			</div>
+			<!-- FORMULARIO DE INSCRIPCION-->
+			<div class="gral_form_container">
+				<form action="#" id="course_form" class="course_form">
+					<div>
+						<div class="row">
+							<div class="col-lg-6 gral_name_col">
+								<input type="text" class="gral_input" placeholder="nombre" required="required">
+							</div>
+							<div class="col-lg-6 gral_name_col">
+								<input type="text" class="gral_input" placeholder="apellido" required="required">
+							</div>
+							<div class="col-lg-6">
+								
+							</div>
+						</div>
+					</div>
+					<div><input type="text" class="gral_input" placeholder="teléfono" required="required"></div>
+					<div><input type="email" class="gral_input" placeholder="e-mail" required="required"></div>
+					<button class="gral_button"><span>inscribirme</span><span class="button_arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></span></button>
+				</form>
+			</div>
+
 
 			<div class="row courses_row">
 				
