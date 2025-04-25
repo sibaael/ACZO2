@@ -1659,3 +1659,127 @@ section
 	bottom: -24px;
 }
 
+/*********************************
+13. youtube
+*********************************/
+.iframe_youtube
+{
+	width:560px;
+	height:315px;
+}
+
+/* ********************************
+14. Gacetilla
+*********************************/
+.gacetilla_tag
+{
+	height: 31px;
+	background: #3F9B46;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+	margin-left: 2px;
+}
+.gacetilla_tag:hover
+{
+	background: #ff6600;
+}
+.gacetilla_tag a
+{
+	display: block;
+	padding-left: 19px;
+	padding-right: 19px;
+	line-height: 31px;
+	font-size: 14px;
+	color: #FFFFFF;
+	font-weight: 400;
+}
+.gacetilla_price span
+{
+	display: inline-block;
+	position: relative;
+	font-size: 18px;
+	color: #37863C;
+	-webkit-transform: translateY(2px);
+	-moz-transform: translateY(2px);
+	-ms-transform: translateY(2px);
+	-o-transform: translateY(2px);
+	transform: translateY(2px);
+}
+.gacetilla_title
+{
+	margin-top: 29px;
+}
+.gacetilla_title h3 a
+{
+	font-size: 22px;
+	color: #2c2b31;
+	font-weight: 600;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+.gacetilla_title h3 a:hover
+{
+	color: #ff6600;
+}
+.gacetilla_text
+{
+	margin-top: 18px;
+	line-height: 1.928;
+}
+.gacetilla_footer
+{
+	margin-top: 33px;
+}
+.gacetilla_author_image
+{
+	width: 37px;
+	height: 37px;
+	overflow: hidden;
+	border-radius: 50%;
+}
+.gacetilla_author_image img
+{
+	max-width: 100%;
+}
+.gacetilla_author_name
+{
+	margin-left: 16px;
+}
+.gacetilla_author_name,
+.gacetilla_author_name a
+{
+	font-size: 14px;
+	color: #2c2b31;
+	font-weight: 500;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+.gacetilla_author_name a:hover
+{
+	color: #ff6600;
+}
+.gacetilla
+{
+	width: 100%;
+	margin-bottom: 83px;
+}
+.gacetilla::after
+{
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 3px;
+	background: #3F9B46;
+	content: '';
+}
