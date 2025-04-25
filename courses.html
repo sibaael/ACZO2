@@ -1,235 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<title>Cursos | ACZO</title>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="description" content="Elearn project">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"   />
-<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
-<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-<link href="plugins/video-js/video-js.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" type="text/css" href="styles/courses.css">
-<link rel="stylesheet" type="text/css" href="styles/main_styles.css">
-<link rel="stylesheet" type="text/css" href="styles/footer.css">
-<link rel="stylesheet" type="text/css" href="styles/forms.css">
-<link rel="stylesheet" type="text/css" href="styles/courses_responsive.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+	<title>Cursos | ACZO</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Elearn project">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+	<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+	<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="plugins/video-js/video-js.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="styles/courses.css">
+	<link rel="stylesheet" type="text/css" href="styles/main_styles.css">
+	<link rel="stylesheet" type="text/css" href="styles/footer.css">
+	<link rel="stylesheet" type="text/css" href="styles/forms.css">
+	<link rel="stylesheet" type="text/css" href="styles/courses_responsive.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
 </head>
+
 <body>
 
-<div class="super_container">
+	<div class="super_container">
 
-	<!-- Header -->
+		<!-- Header -->
+		<header class="header">
+			<!-- Header Content -->
+			<div id="header_content"></div>
+		</header>
 
-	<header class="header">
-			
-		<!-- Top Bar -->
-		<div class="top_bar">
-			<div class="top_bar_container">
+		<!-- Menu -->
+
+		<div class="menu d-flex flex-column align-items-end justify-content-start text-right menu_mm trans_400">
+			<div class="menu_close_container">
+				<div class="menu_close">
+					<div></div>
+					<div></div>
+				</div>
+			</div>
+			<div class="search">
+				<form action="#" class="header_search_form menu_mm">
+					<input type="search" class="search_input menu_mm" placeholder="Search" required="required">
+					<button
+						class="header_search_button d-flex flex-column align-items-center justify-content-center menu_mm">
+						<i class="fa fa-search menu_mm" aria-hidden="true"></i>
+					</button>
+				</form>
+			</div>
+			<nav class="menu_nav">
+				<ul class="menu_mm">
+					<li class="menu_mm"><a href="index.html">Inicio</a></li>
+					<li class="menu_mm"><a href="courses.html">Cursos</a></li>
+					<li class="menu_mm"><a href="instructors.html">Instructors</a></li>
+					<li class="menu_mm"><a href="#">Events</a></li>
+					<li class="menu_mm"><a href="blog.html">Blog</a></li>
+					<li class="menu_mm"><a href="contact.html">Contacto</a></li>
+				</ul>
+			</nav>
+			<div class="menu_extra">
+				<div class="menu_phone"><span class="menu_title">Teléfono:</span>+54 9 11 5741 8037</div>
+				<div class="menu_social">
+					<span class="menu_title">Siguenos</span>
+					<ul>
+						<!-- <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li> -->
+						<li><a href="https://www.facebook.com/ornitologia.aczo"><i class="fa fa-facebook"
+									aria-hidden="true"></i></a></li>
+						<li><a href="https://www.instagram.com/ornitologia_aczo"><i class="fa fa-instagram"
+									aria-hidden="true"></i></a></li>
+						<!-- <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li> -->
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- Home -->
+
+		<div class="home_page">
+			<!-- Background image artist https://unsplash.com/@thepootphotographer -->
+			<div class="home_background parallax_background parallax-window" data-parallax="scroll"
+				data-image-src="images/courses.jpg" data-speed="0.8"></div>
+			<div class="home_page_container">
 				<div class="container">
 					<div class="row">
 						<div class="col">
-							<div class="top_bar_content d-flex flex-row align-items-center justify-content-start">
-								<ul class="top_bar_contact_list">
-									<li><div class="question">Tienes alguna pregunta?</div></li>
-									<li>
-										<div>+54 9 11 5741 8037</div>
-									</li>
-									<li>
-										<div>aczo@ornitofoa.com.ar</div>
-									</li>
-								</ul>
-								<div class="top_bar_login ml-auto">
+							<div class="home_content text-center">
+								<div class="home_title">Cursos</div>
+								<div class="breadcrumbs">
 									<ul>
-										<li>
-											<a href="https://www.facebook.com/ornitologia.aczo"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-										</li>
-										<li>
-											<a href="https://www.instagram.com/ornitologia_aczo"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-										</li>
-										<!-- <li><a href="#">Register</a></li>
-										<li><a href="#">Login</a></li> -->
+										<li><a href="index.html">Inicio</a></li>
+										<li>Cursos</li>
 									</ul>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>				
+			</div>
 		</div>
 
-		<!-- Header Content -->
-		<div id="header_content"></div>
+		<!-- Courses -->
 
-		<!-- Header Search Panel -->
-		<div class="header_search_container">
+		<div class="courses">
 			<div class="container">
+				<!-- Featured Course -->
 				<div class="row">
-					<div class="col">
-						<div class="header_search_content d-flex flex-row align-items-center justify-content-end">
-							<form action="#" class="header_search_form">
-								<input type="search" class="search_input" placeholder="Search" required="required">
-								<button class="header_search_button d-flex flex-column align-items-center justify-content-center">
-									<i class="fa fa-search" aria-hidden="true"></i>
-								</button>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>			
-		</div>			
-	</header>
-
-	<!-- Menu -->
-
-	<div class="menu d-flex flex-column align-items-end justify-content-start text-right menu_mm trans_400">
-		<div class="menu_close_container"><div class="menu_close"><div></div><div></div></div></div>
-		<div class="search">
-			<form action="#" class="header_search_form menu_mm">
-				<input type="search" class="search_input menu_mm" placeholder="Search" required="required">
-				<button class="header_search_button d-flex flex-column align-items-center justify-content-center menu_mm">
-					<i class="fa fa-search menu_mm" aria-hidden="true"></i>
-				</button>
-			</form>
-		</div>
-		<nav class="menu_nav">
-			<ul class="menu_mm">
-				<li class="menu_mm"><a href="index.html">Inicio</a></li>
-				<li class="menu_mm"><a href="courses.html">Cursos</a></li>
-				<li class="menu_mm"><a href="instructors.html">Instructors</a></li>
-				<li class="menu_mm"><a href="#">Events</a></li>
-				<li class="menu_mm"><a href="blog.html">Blog</a></li>
-				<li class="menu_mm"><a href="contact.html">Contacto</a></li>
-			</ul>
-		</nav>
-		<div class="menu_extra">
-			<div class="menu_phone"><span class="menu_title">Teléfono:</span>+54 9 11 5741 8037</div>
-			<div class="menu_social">
-				<span class="menu_title">Siguenos</span>
-				<ul>
-					<!-- <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li> -->
-					<li><a href="https://www.facebook.com/ornitologia.aczo"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-					<li><a href="https://www.instagram.com/ornitologia_aczo"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-					<!-- <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li> -->
-				</ul>
-			</div>
-		</div>
-	</div>
-	
-	<!-- Home -->
-
-	<div class="home_page">
-		<!-- Background image artist https://unsplash.com/@thepootphotographer -->
-		<div class="home_background parallax_background parallax-window" data-parallax="scroll" data-image-src="images/courses.jpg" data-speed="0.8"></div>
-		<div class="home_page_container">
-			<div class="container">
-				<div class="row">
-					<div class="col">
-						<div class="home_content text-center">
-							<div class="home_title">Cursos</div>
-							<div class="breadcrumbs">
-								<ul>
-									<li><a href="index.html">Inicio</a></li>
-									<li>Cursos</li>
-								</ul>
+					<div class="col-lg-6 featured_col">
+						<div class="featured_content">
+							<div class="featured_title">
+								<h3><a href="/cursos/actual.html">Curso de Cría y Cuidado de Aves Domésticase</a></h3>
+							</div>
+							<div class="featured_text">¡Inscripciones Abiertas! 🌟<br>
+								🔍 Detalles del Curso:<br>
+								✅ Metodología: Clases virtuales<br>
+								✅ Libre y gratuito<br>
+								✅ Aprende a criar y cuidar aves de manera responsable<br>
+								✅ Comienzo: Marzo 2025<br>
+								¡No dejes pasar esta oportunidad única de aprender y disfrutar! 🌈✨<br></div>
+							<div class="featured_footer d-flex align-items-center justify-content-start">
+								<div class="featured_sales ml-auto"><span>EN CURSO</span></div>
 							</div>
 						</div>
 					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- Courses -->
-
-	<div class="courses">
-		<div class="container">
-			<!-- Featured Course -->
-			<div class="row">
-				<div class="col-lg-6 featured_col">
-					<div class="featured_content">
-						<!-- <div class="featured_header d-flex flex-row align-items-center justify-content-start">
-							<div class="featured_tag"><a href="#">Featured</a></div>
-							<div class="featured_price ml-auto">Price: <span>$35</span></div>
-						</div> -->
-						<div class="featured_title"><h3><a href="courses.html">Curso de Cría y Cuidado de Aves Domésticase</a></h3></div>
-						<div class="featured_text">¡Inscripciones Abiertas! 🌟<br>
-							🔍 Detalles del Curso:<br>
-							✅ Metodología: Clases virtuales<br>
-							✅ Libre y gratuito<br>
-							✅ Aprende a criar y cuidar aves de manera responsable<br>
-							✅ Comienzo: Marzo 2025<br>
-							¡No dejes pasar esta oportunidad única de aprender y disfrutar! 🌈✨<br></div>
-						<div class="featured_footer d-flex align-items-center justify-content-start">
-							<div class="featured_author_image"><img src="images/featured_author.jpg" alt=""></div>
-							<div class="featured_author_name">Por <a href="#">Facundo Gallo</a></div>
-							<div class="featured_author_image"><img src="images/featured_author.jpg" alt=""></div>
-							<div class="featured_author_name"><a href="#">Roberto Nadal</a></div>
-							<div class="featured_author_image"><img src="images/featured_author.jpg" alt=""></div>
-							<div class="featured_author_name"><a href="#">Franco del Mauro</a></div>
-							<!-- <div class="featured_sales ml-auto"><span>352</span> Sales</div> -->
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-6 featured_col">
-					<!-- Background image artist https://unsplash.com/@jtylernix -->
-					<div class="featured_background" style="background-image:url(images/curso/curso_1_2025.jpeg)"></div>
-				</div>
-			</div>
-
-			<div class="row courses_row" >
-				<div class="col-lg-10 offset-lg-1">
-					<div class="section_title text-center"><h2>inscribete</h2></div>
-					<div class="section_subtitle">llenando y enviándonos la información del siguiente formulario, te inscribirás a este curso y recibirás por WhatsApp la confirmación e información necesaria para acceder al curso. </div>
-				</div>
-			</div>
-			<!-- FORMULARIO DE INSCRIPCION-->
-			<div class="gral_form_container">
-				<form action="#" id="course_form" class="course_form">
-					<div>
-						<div class="row">
-							<div class="col-lg-6 gral_name_col">
-								<input type="text" class="gral_input" placeholder="nombre" required="required">
-							</div>
-							<div class="col-lg-6 gral_name_col">
-								<input type="text" class="gral_input" placeholder="apellido" required="required">
-							</div>
-							<div class="col-lg-6">
-								
-							</div>
-						</div>
-					</div>
-					<div><input type="phone" id="phone" name="phone" class="gral_input" placeholder="teléfono" required="required"></div>
-					<div><input type="email" class="gral_input" placeholder="e-mail" required="required"></div>
-					<button class="gral_button"><span>inscribirme</span><span class="button_arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></span></button>
-				</form>
-			</div>
-
-
-			<div class="row courses_row">
-				
-				<!-- Course -->
-				<div class="col-lg-4 col-md-6">
-					<div class="course">
-						<div class="course_image"><img src="images/course_1.jpg" alt=""></div>
-						<div class="course_body">
-							<div class="course_header d-flex flex-row align-items-center justify-content-start">
-								<div class="course_tag"><a href="cursos/actual.html">Ver</a></div>
-								<div class="course_price ml-auto">Modalidad: <span>Online</span></div>
-							</div>
-							<div class="course_title"><h3><a href="cursos/actual.html">Cría y Cuidados de Aves Domésticas</a></h3></div>
-							<div class="course_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni est, dolores accusantium error iste at alias. Repellat necessitatibus, aspernatur iure, voluptas nobis quidem maxime rem ipsa ratione nulla et distinctio iusto atque blanditiis ipsum eum omnis numquam amet! Consequatur fugiat id sint aut dolor expedita veniam fugit quos amet eligendi.</div>
-						</div>
+					<div class="col-lg-6 featured_col">
+						<a href="/cursos/actual.html">
+							<div class="featured_background"
+								style="background-image:url(images/curso/curso_1_2025.jpeg)"></div>
+						</a>
 					</div>
 				</div>
 
+				<div class="row courses_row">
+					<div class="col-lg-10 offset-lg-1">
+						<div class="section_title text-center">
+							<h2>inscribete</h2>
+						</div>
+						<div class="section_subtitle">llenando y enviándonos la información del siguiente formulario, te
+							inscribirás a este curso y recibirás por WhatsApp la confirmación e información necesaria
+							para acceder al curso. </div>
+					</div>
+				</div>
+				<!-- FORMULARIO DE INSCRIPCION-->
+				<div class="gral_form_container">
+					<form action="#" id="course_form" class="course_form">
+						<div>
+							<div class="row">
+								<div class="col-lg-6 gral_name_col">
+									<input type="text" class="gral_input" placeholder="nombre" required="required">
+								</div>
+								<div class="col-lg-6 gral_name_col">
+									<input type="text" class="gral_input" placeholder="apellido" required="required">
+								</div>
+								<div class="col-lg-6">
 
-			</div>
+								</div>
+							</div>
+						</div>
+						<div><input type="phone" id="phone" name="phone" class="gral_input" placeholder="teléfono"
+								required="required"></div>
+						<div><input type="email" class="gral_input" placeholder="e-mail" required="required"></div>
+						<button class="gral_button"><span>inscribirme</span><span class="button_arrow"><i
+									class="fa fa-angle-right" aria-hidden="true"></i></span></button>
+					</form>
+				</div>
 
-			<!-- Pagination -->
-			<!-- <div class="row">
+
+				<div class="row courses_row">
+
+					<!-- Course -->
+					<div class="col-lg-4 col-md-6">
+						<div class="course">
+							<div class="course_image"><img src="images/course_1.jpg" alt=""></div>
+							<div class="course_body">
+								<div class="course_header d-flex flex-row align-items-center justify-content-start">
+									<div class="course_tag"><a href="cursos/actual.html">Ver</a></div>
+									<div class="course_price ml-auto">Modalidad: <span>Online</span></div>
+								</div>
+								<div class="course_title">
+									<h3><a href="cursos/actual.html">Cría y Cuidados de Aves Domésticas</a></h3>
+								</div>
+								<div class="course_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+									est, dolores accusantium error iste at alias. Repellat necessitatibus, aspernatur
+									iure, voluptas nobis quidem maxime rem ipsa ratione nulla et distinctio iusto atque
+									blanditiis ipsum eum omnis numquam amet! Consequatur fugiat id sint aut dolor
+									expedita veniam fugit quos amet eligendi.</div>
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+
+				<!-- Pagination -->
+				<!-- <div class="row">
 				<div class="col">
 					<div class="courses_paginations">
 						<ul>
@@ -242,27 +204,31 @@
 					</div>
 				</div>
 			</div> -->
+			</div>
 		</div>
+
+		<!-- Footer -->
+		<footer class="footer">
+			<div id="footerdiv" name="footerdiv"></div>
+			<div class="copyright">
+				<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+				Copyright &copy;
+				<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made
+				with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com"
+					target="_blank">Colorlib</a>
+				<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+			</div>
+		</footer>
 	</div>
 
-	<!-- Footer -->
-	<footer class="footer">
-		<div id="footerdiv" name="footerdiv"></div>
-		<div class="copyright">
-			<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-			Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-			<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-		</div>
-	</footer>
-</div>
-
-<script src="js/jquery-3.2.1.min.js"></script>
-<script src="styles/bootstrap4/popper.js"></script>
-<script src="styles/bootstrap4/bootstrap.min.js"></script>
-<script src="plugins/easing/easing.js"></script>
-<script src="plugins/parallax-js-master/parallax.min.js"></script>
-<script src="js/courses.js"></script>
-<script src="js/footer.js"></script>
-<script src="js/header_content.js"></script>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="styles/bootstrap4/popper.js"></script>
+	<script src="styles/bootstrap4/bootstrap.min.js"></script>
+	<script src="plugins/easing/easing.js"></script>
+	<script src="plugins/parallax-js-master/parallax.min.js"></script>
+	<script src="js/courses.js"></script>
+	<script src="js/footer.js"></script>
+	<script src="js/header_content.js"></script>
 </body>
+
 </html>
