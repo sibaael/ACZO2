@@ -7,7 +7,7 @@ $(document).ready(function()
 
 
 	function setHeaderContent() {
-		$("#header_content").load("header_content.html"); 
+		$("#header_content").load("/header_content.html"); 
 	}
 
 });
