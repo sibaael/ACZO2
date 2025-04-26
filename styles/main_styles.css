@@ -1206,7 +1206,7 @@ section
 }
 .featured_footer
 {
-	margin-top: 55px;
+	margin-top: 30px;
 }
 .featured_author_image
 {
@@ -1245,7 +1245,7 @@ section
 	height: 100%;
 	background-repeat: no-repeat;
 	background-size: contain;
-	background-position: center center;
+	background-position: left center;
 }
 
 
