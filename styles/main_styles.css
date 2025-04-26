@@ -463,11 +463,7 @@ section
 3.3 Logo
 *********************************/
 
-.logo,
-.logo_text
-{
-	display: inline-block;
-}
+
 .logo
 {
 	-webkit-transition: all 200ms ease;
@@ -478,11 +474,12 @@ section
 }
 .logo_text
 {
+	display: inline-block;
 	font-family: 'Montserrat', serif;
 	font-size: 18px;
 	font-weight: 700;
 	line-height: 0.75;
-	margin-left: 1px;
+	margin-left: 5px;
 	color: #464646;
 	text-transform: uppercase;
 	-webkit-transition: all 200ms ease;
@@ -1782,4 +1779,34 @@ section
 	height: 3px;
 	background: #3F9B46;
 	content: '';
+}
+
+/* ********************************
+14. Gacetilla
+*********************************/
+.gral_social
+{
+	margin-top: 22px;
+}
+.gral_social ul li
+{
+	display: inline-block;
+}
+.gral_social ul li:not(:last-child)
+{
+	margin-right: 24px;
+}
+.gral_social ul li a i
+{
+	font-size: 16px;
+	color: #37863C;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+.gral_social ul li a i:hover
+{
+	color: #ffae00;
 }
