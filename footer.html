@@ -3,12 +3,12 @@
 
         <div class="col-lg-3 footer_col">
             <div class="footer_about">
-                <a href="index.html">
-                    <div class="logo_img"><img src="images/logo.png" alt=""><span><h5>Asociación de Canaricultores de la Zona Oeste</h5></span></div>
+                <a id="logohref2" href="">
+                    <div class="logo_img"><img id="logosrc2" src="" alt=""><span><h5>Asociación de Canaricultores de la Zona Oeste</h5></span></div>
                 </a>
                 <div class="footer_about_text">
-                    <p>Personería jurídica legajo 55.285<br>Matrícula 10.363 – Fecha 25/04/1991<br>
-                        Inscripción Municipal expediente Nº 556.200 – Fecha 27/04/2000<br>
+                    <p>Personería jurídica legajo 55.285<br>Matrícula 10.363 - Fecha 25/04/1991<br>
+                        Inscripción Municipal expediente Nº 556.200 - Fecha 27/04/2000<br>
                         Fundada 21/09/1989<br>Afiliada a la Federación Ornitológica Argentina (F.O.A.).</p>
                 </div>
                 <div class="footer_social">
@@ -26,12 +26,12 @@
             <div class="footer_links">
                 <div class="footer_title">accesos rápidos</div>
                 <ul class="footer_list">
-                    <li><a href="index.html">inicio</a></li>
-                    <li><a href="about.html">institucional</a></li>
-                    <li><a href="courses.html">cursos y charlas</a></li>
-                    <li><a href="news.html">noticias</a></li>
+                    <li><a id="iniciohref2" href="">inicio</a></li>
+                    <li><a id="abouthref2" href="">Institucional</a></li>
+                    <li><a id="courseshref2" href="">cursos y charlas</a></li>
+                    <li><a id="newshref2" href="">noticias</a></li>
                     <li><a href="#">servicios</a></li>
-                    <li><a href="contact.html">mensaje</a></li>
+                    <li><a id="contacthref2" href="">mensaje</a></li>
                 </ul>
             </div>
         </div>
@@ -70,3 +70,15 @@
         </div>
     </div>
 </div>
+<script> 
+    $(document).ready(function () { 
+        var rootSite = window.location.origin;
+        $("#logohref2").attr('href', rootSite + '/index.html');
+        $("#abouthref2").attr('href', rootSite + '/about.html');
+        $("#iniciohref2").attr('href', rootSite + '/index.html');
+        $("#courseshref2").attr('href', rootSite + '/courses.html');
+        $("#contacthref2").attr('href', rootSite + '/contact.html');
+        $("#newshref2").attr('href', rootSite + '/news.html');
+        $("#logosrc2").attr('src', rootSite + '/images/logo.png');
+    }); 
+</script> 
