@@ -11,9 +11,9 @@ $(document).ready(function()
 {
 	"use strict";
 
-	const subfolder = "/ACZO2";
-	var rootSite = window.location.origin + subfolder;
-	// var rootSite = window.location.origin;
+	// const subfolder = "/ACZO2";
+	// var rootSite = window.location.origin + subfolder;
+	var rootSite = window.location.origin;
 	console.log(rootSite);
 	setFooter();
 
