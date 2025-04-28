@@ -1769,6 +1769,7 @@ section
 	width: 100%;
 	margin-bottom: 83px;
 }
+
 .gacetilla::after
 {
 	display: block;
@@ -1780,6 +1781,18 @@ section
 	background: #3F9B46;
 	content: '';
 }
+
+.gacetilla_body
+{
+	width: 100%;
+	padding-left: 34px;
+	padding-right: 32px;
+	padding-top: 56px;
+	padding-bottom: 51px;
+	height: 22vw;
+	background: #f2f1f8;
+}
+
 
 /* ********************************
 14. Gacetilla
@@ -1810,3 +1823,4 @@ section
 {
 	color: #ffae00;
 }
+
