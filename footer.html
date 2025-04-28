@@ -72,7 +72,9 @@
 </div>
 <script> 
     $(document).ready(function () { 
-        var rootSite = window.location.origin;
+		const subfolder = "/ACZO2";
+		var rootSite = window.location.origin + subfolder;
+		// var rootSite = window.location.origin;
         $("#logohref2").attr('href', rootSite + '/index.html');
         $("#abouthref2").attr('href', rootSite + '/about.html');
         $("#iniciohref2").attr('href', rootSite + '/index.html');
