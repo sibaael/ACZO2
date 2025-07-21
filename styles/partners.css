@@ -239,69 +239,6 @@ section
 {
 	padding: 0px !important;
 }
-.button
-{
-	display: inline-block;
-	width: auto;
-	height: 47px;
-	background: #ff8a00;
-	-webkit-transition: all 200ms ease;
-	-moz-transition: all 200ms ease;
-	-ms-transition: all 200ms ease;
-	-o-transition: all 200ms ease;
-	transition: all 200ms ease;
-}
-.button a
-{
-	display: block;
-	position: relative;
-	padding-left: 33px;
-	padding-right: 77px;
-	line-height: 47px;
-	font-size: 12px;
-	font-weight: 600;
-	color: #FFFFFF;
-	text-transform: uppercase;
-	white-space: nowrap;
-}
-.button_arrow
-{
-	position: absolute;
-	top: 0;
-	right: 0;
-	width: 44px;
-	height: 100%;
-	background: #ff6600;
-	text-align: center;
-	-webkit-transition: all 200ms ease;
-	-moz-transition: all 200ms ease;
-	-ms-transition: all 200ms ease;
-	-o-transition: all 200ms ease;
-	transition: all 200ms ease;
-}
-.button_arrow i
-{
-	font-size: 20px;
-	line-height: 47px;
-	color: #ffae00;
-	-webkit-transition: all 200ms ease;
-	-moz-transition: all 200ms ease;
-	-ms-transition: all 200ms ease;
-	-o-transition: all 200ms ease;
-	transition: all 200ms ease;
-}
-.button:hover
-{
-	background: #ffae00;
-}
-.button:hover .button_arrow
-{
-	background: #ff8a00;
-}
-.button:hover .button_arrow i
-{
-	color: #ffae00;
-}
 .section_title h2
 {
 	font-weight: 700;

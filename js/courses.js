@@ -132,4 +132,50 @@ $(document).ready(function()
 		menuActive = false;
 	}
 
+	const btnInscribrime = document.getElementById('btnInscribirme');
+	btnInscribrime.addEventListener('click', function(event) {
+		event.preventDefault();
+		if(validateForm()){
+			showSuccess('Se ha enviado la inscripción con éxito, pronto recibirá un email de confirmación.');
+		}
+	});
+
+	function validateForm()
+	{
+		const nombre = document.getElementById('txtNombre').value.trim();
+		const apellido = document.getElementById('txtApellido').value.trim();
+		const telefono = document.getElementById('txtTelefono').value.trim();
+		const email = document.getElementById('txtEmail').value.trim();
+		let mensaje = '';
+		let isValid = true;
+		
+		hideAlerts();
+
+		if(!validateIsEmptyAndLength(nombre,3,150)){
+			mensaje += 'El NOMBRE es obligatorio y debe contener al menos 3 caracteres y no superar los 150. ';
+			isValid=false;
+		}
+
+
+		if(!validateIsEmptyAndLength(apellido,3,150)){
+			mensaje += 'El APELLIDO es obligatorio y debe contener al menos 3 caracteres y no superar los 150. ';
+			isValid=false;
+		}
+
+		if(!validatePhoneNumber(telefono)){
+			mensaje += 'El TELEFONO es obligatorio y debe tener un valor correcto (sin puntos, ni guiones, ni espacios). ';
+			isValid=false;
+		}
+
+		if(!validateEmail(email, 150)){
+			mensaje += 'El EMAIL es obligatorio, debe tener un valor con el formato correcto y no superar los 150 caracteres. ';
+			isValid=false;
+		}
+
+		if(!isValid){
+			showError(mensaje);
+		}
+
+		return isValid;
+	}
 });

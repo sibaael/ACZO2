@@ -134,4 +134,49 @@ $(document).ready(function()
 		menuActive = false;
 	}
 
+	const btnInscribrime = document.getElementById('btnEnviar');
+	btnInscribrime.addEventListener('click', function(event) {
+		event.preventDefault();
+		if(validateForm()){
+			showSuccess('Se ha enviado el MENSAJE con éxito, pronto recibirá un email de confirmación.');
+		}
+	});
+
+	function validateForm()
+	{
+		const nombre = document.getElementById('txtNombre').value.trim();
+		const email = document.getElementById('txtEmail').value.trim();
+		const asunto = document.getElementById('txtAsunto').value.trim();
+		const mensajeUsuario = document.getElementById('txtMensaje').value.trim();
+		let mensaje = '';
+		let isValid = true;
+		
+		hideAlerts();
+
+		if(!validateIsEmptyAndLength(nombre,3,150)){
+			mensaje += 'El NOMBRE es obligatorio y debe contener al menos 3 caracteres y no superar los 150. ';
+			isValid=false;
+		}
+
+		if(!validateEmail(email, 150)){
+			mensaje += 'El EMAIL es obligatorio, debe tener un valor con el formato correcto y no superar los 150 caracteres. ';
+			isValid=false;
+		}
+
+		if(!validateIsEmptyAndLength(asunto,3,100)){
+			mensaje += 'El ASUNTO es obligatorio y debe contener al menos 3 caracteres y no superar los 100. ';
+			isValid=false;
+		}
+
+		if(!validateIsEmptyAndLength(mensajeUsuario,10,500)){
+			mensaje += 'El MENSAJE es obligatorio y debe contener al menos 10 caracteres y no superar los 500. ';
+			isValid=false;
+		}
+
+		if(!isValid){
+			showError(mensaje);
+		}
+
+		return isValid;
+	}
 });

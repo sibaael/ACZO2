@@ -29,7 +29,7 @@
                     <li><a id="iniciohref2" href="">inicio</a></li>
                     <li><a id="abouthref2" href="">institucional</a></li>
                     <li><a id="courseshref2" href="">cursos y charlas</a></li>
-                    <li><a id="socioshref">socios</a></li>
+                    <li><a id="partnershref">socios</a></li>
                     <li><a id="newshref2" href="">noticias</a></li>
                     <li><a id="contacthref2" href="">mensaje</a></li>
                 </ul>
@@ -72,16 +72,16 @@
 </div>
 <script> 
     $(document).ready(function () { 
-		const subfolder = "/ACZO2";
-		var rootSite = window.location.origin + subfolder;
-		//  var rootSite = window.location.origin;
+		// const subfolder = "/ACZO2";
+		// var rootSite = window.location.origin + subfolder;
+		 var rootSite = window.location.origin;
         $("#logohref2").attr('href', rootSite + '/index.html');
         $("#abouthref2").attr('href', rootSite + '/about.html');
         $("#iniciohref2").attr('href', rootSite + '/index.html');
         $("#courseshref2").attr('href', rootSite + '/courses.html');
         $("#contacthref2").attr('href', rootSite + '/contact.html');
         $("#newshref2").attr('href', rootSite + '/news.html');
-        $("#socioshref").attr('href', rootSite + '/socios.html');
+        $("#partnershref").attr('href', rootSite + '/partners.html');
         $("#logosrc2").attr('src', rootSite + '/images/logo.png');
     }); 
 </script> 

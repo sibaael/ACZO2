@@ -115,21 +115,36 @@
 								</div>
 							</div>
 						</div>
-						<div class="contact_form_container">
-							<form action="#" id="contact_form" class="contact_form">
+						<div class="gral_form_container">
+							<form id="contact_form" action="#" >
 								<div>
 									<div class="row">
-										<div class="col-lg-6 contact_name_col">
-											<input type="text" class="gral_input" placeholder="nombre" required="required">
+										<div class="col-lg-11 gral_name_col">
+											<input id="txtNombre" type="text" class="gral_input" placeholder="nombre" required="required">
 										</div>
-										<div class="col-lg-6">
-											<input type="email" class="gral_input" placeholder="e-mail" required="required">
+									</div>
+									<div class="row">
+										<div class="col-lg-11 gral_name_col">
+											<input id="txtEmail" type="email" class="gral_input" placeholder="e-mail" required="required">
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-lg-11 gral_name_col">
+											<input id="txtAsunto" type="text" class="gral_input" placeholder="asunto" required="required">
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-lg-11 gral_name_col">
+											<textarea id="txtMensaje" class="gral_input gral_textarea" placeholder="mensaje" required="required"></textarea>
 										</div>
 									</div>
 								</div>
-								<div><input type="text" class="gral_input" placeholder="asunto" required="required"></div>
-								<div><textarea class="gral_input gral_textarea" placeholder="mensaje"></textarea></div>
-								<button class="gral_button"><span>enviar</span><span class="button_arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></span></button>
+								<div>
+									<button id="btnEnviar" class="gral_button" type="submit"><span>enviar</span><span class="button_arrow"><i
+										class="fa fa-angle-right" aria-hidden="true"></i></span></button>
+								</div>
+								<div id="errorDescription" class="alert alert-danger" role="alert" style="display: none;"></div>
+								<div id="succesDescription" class="alert alert-success" role="alert" style="display: none;"></div>
 							</form>
 						</div>
 					</div>
@@ -172,6 +187,7 @@
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCIwF204lFZg1y4kPSIhKaHEXMLYxxuMhA"></script>
 <script src="js/menu.js"></script>
 <script src="js/contact.js"></script>
+<script src="js/common.js"></script>
 <script src="js/footer.js"></script>
 <script src="js/header_content.js"></script>
 

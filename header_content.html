@@ -54,7 +54,7 @@
                             <li><a id="iniciohref" href="">inicio</a></li>
                             <li><a id="abouthref" href="">institucional</a></li>
                             <li><a id="courseshref" href="">cursos</a></li>
-                            <li><a id="socioshref">socios</a></li>
+                            <li><a id="partnershref">socios</a></li>
                             <!-- <li><a href="news.html">noticias</a></li> -->
                             <li><a id="contacthref" href="">contacto</a></li>
                             <!-- class="active" -->
@@ -93,15 +93,15 @@
 </div>
 <script> 
     $(document).ready(function () { 
-        const subfolder = "/ACZO2";
-		var rootSite = window.location.origin + subfolder;
-		//  var rootSite = window.location.origin;
+        // const subfolder = "/ACZO2";
+		// var rootSite = window.location.origin + subfolder;
+		 var rootSite = window.location.origin;
         $("#logohref").attr('href', rootSite + '/index.html');
         $("#abouthref").attr('href', rootSite + '/about.html');
         $("#iniciohref").attr('href', rootSite + '/index.html');
         $("#courseshref").attr('href', rootSite + '/courses.html');
         $("#contacthref").attr('href', rootSite + '/contact.html');
-        $("#socioshref").attr('href', rootSite + '/socios.html');
+        $("#partnershref").attr('href', rootSite + '/partners.html');
         $("#logosrc").attr('src', rootSite + '/images/logo.png');
     }); 
 </script> 

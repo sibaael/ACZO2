@@ -359,4 +359,98 @@ $(document).ready(function()
 		}
 	}
 
+	const btnAsociarme = document.getElementById('btnAsociarme');
+	btnAsociarme.addEventListener('click', function(event) {
+		event.preventDefault();
+		if(validateForm()){
+			showSuccess('Se ha enviado el FORMULARIO con éxito, pronto recibirá un email de confirmación.');
+		}
+	});
+
+	function validateForm()
+	{
+		const nombre = document.getElementById('txtNombre').value.trim();
+		const email = document.getElementById('txtEmail').value.trim();
+		const apellido = document.getElementById('txtApellido').value.trim();
+		const calle = document.getElementById('txtCalle').value.trim();
+		const localidad = document.getElementById('txtLocalidad').value.trim();
+		const codigopostal = document.getElementById('txtCodigoPostal').value.trim();
+		const provincia = document.getElementById('txtProvincia').value.trim();
+		const telefono = document.getElementById('txtTelefono').value.trim();
+		const documento = document.getElementById('txtDocumento').value.trim();
+		const profesion = document.getElementById('txtProfesion').value.trim();
+		const nacimiento = document.getElementById('txtNacimiento').value.trim();
+		const justificacion = document.getElementById('txtJustificacion').value.trim();
+
+		let mensaje = '';
+		let isValid = true;
+		
+		hideAlerts();
+
+		if(!validateIsEmptyAndLength(nombre,3,150)){
+			mensaje += 'El NOMBRE es obligatorio y debe contener al menos 3 caracteres y no superar los 150. ';
+			isValid=false;
+		}
+
+		if(!validateIsEmptyAndLength(apellido,3,150)){
+			mensaje += 'El APELLIDO es obligatorio y debe contener al menos 3 caracteres y no superar los 150. ';
+			isValid=false;
+		}
+
+		if(!validateLength(calle,3,250)){
+			mensaje += 'La CALLE debe contener al menos 3 caracteres y no superar los 250. ';
+			isValid=false;
+		}
+
+		if(!validateIsEmptyAndLength(localidad,3,100)){
+			mensaje += 'La LOCALIDAD es obligatorio y debe contener al menos 3 caracteres y no superar los 100. ';
+			isValid=false;
+		}
+
+		if(!validateLength(codigopostal,4,15)){
+			mensaje += 'El CÓDIGO POSTAL debe contener al menos 4 caracteres y no superar los 15. ';
+			isValid=false;
+		}
+
+		if(!validateIsEmptyAndLength(provincia,3,100)){
+			mensaje += 'La PROVINCIA es obligatorio y debe contener al menos 3 caracteres y no superar los 100. ';
+			isValid=false;
+		}
+
+		if(!validatePhoneNumber(telefono)){
+			mensaje += 'El TELEFONO es obligatorio y debe tener un valor correcto (sin puntos, ni guiones, ni espacios). ';
+			isValid=false;
+		}
+
+		if(!validateEmail(email, 150)){
+			mensaje += 'El EMAIL es obligatorio, debe tener un valor con el formato correcto y no superar los 150 caracteres. ';
+			isValid=false;
+		}
+
+		if(!validateDocumentNumber(documento)){
+			mensaje += 'El DOCUMENTO es obligatorio y debe tener un valor correcto (sin puntos, ni guiones, ni espacios). ';
+			isValid=false;
+		}
+		
+		if(!validateLength(profesion,3,100)){
+			mensaje += 'La PROFESIÓN debe contener al menos 3 caracteres y no superar los 100. ';
+			isValid=false;
+		}
+
+		if(!validateAge(nacimiento)){
+			mensaje += 'La FECHA DE NACIMIENTO es obligatoria y debe ser mayor de edad. ';
+			isValid=false;
+		}
+
+		if(!validateLength(justificacion,3,250)){
+			mensaje += 'La JUSTIFICACIÓN debe contener al menos 3 caracteres y no superar los 250. ';
+			isValid=false;
+		}
+
+		if(!isValid){
+			showError(mensaje);
+		}
+
+		return isValid;
+	}
 });

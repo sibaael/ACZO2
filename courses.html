@@ -7,7 +7,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="description" content="Elearn project">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+	<link rel="stylesheet" type="text/css"
+		href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
 	<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="plugins/font-awesome-4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="plugins/video-js/video-js.css">
@@ -34,185 +35,196 @@
 			<div id="menudiv" name="menudiv"></div>
 		</section>
 
-		<!-- Home -->
+		<main>
+			<!-- Home -->
+			<div class="home_page">
+				<!-- Background image artist https://unsplash.com/@thepootphotographer -->
+				<div class="home_background parallax_background parallax-window" data-parallax="scroll"
+					data-image-src="images/courses.jpg" data-speed="0.8"></div>
+				<div class="home_page_container">
+					<div class="container">
+						<div class="row">
+							<div class="col">
+								<div class="home_content text-center">
+									<div class="home_title">Cursos y Charlas</div>
+									<div class="breadcrumbs">
+										<ul>
+											<li><a href="index.html">Inicio</a></li>
+											<li>Cursos y Charlas</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
-		<div class="home_page">
-			<!-- Background image artist https://unsplash.com/@thepootphotographer -->
-			<div class="home_background parallax_background parallax-window" data-parallax="scroll"
-				data-image-src="images/courses.jpg" data-speed="0.8"></div>
-			<div class="home_page_container">
+			<!-- Courses -->
+			<div class="courses">
 				<div class="container">
+					<!-- Featured Course -->
 					<div class="row">
-						<div class="col">
-							<div class="home_content text-center">
-								<div class="home_title">Cursos y Charlas</div>
-								<div class="breadcrumbs">
-									<ul>
-										<li><a href="index.html">Inicio</a></li>
-										<li>Cursos y Charlas</li>
-									</ul>
+						<div class="col-lg-6 featured_col">
+							<div class="featured_content">
+								<div class="featured_title">
+									<h3><a href="cursos/actual.html">Curso de Cría y Cuidado de Aves Domésticase</a>
+									</h3>
+								</div>
+								<div class="featured_text">¡Inscripciones Abiertas! 🌟<br>
+									🔍 Detalles del Curso:<br>
+									✅ Metodología: Clases virtuales<br>
+									✅ Libre y gratuito<br>
+									✅ Aprende a criar y cuidar aves de manera responsable<br>
+									✅ Comienzo: Marzo 2025<br>
+									¡No dejes pasar esta oportunidad única de aprender y disfrutar! 🌈✨<br></div>
+								<div class="featured_footer d-flex align-items-center justify-content-start">
+									<div class="featured_sales ml-auto"><span>EN CURSO</span></div>
 								</div>
 							</div>
 						</div>
+						<div class="col-lg-6 featured_col">
+							<a href="cursos/actual.html">
+								<div class="featured_background"
+									style="background-image:url(images/curso/curso_actual_690_614.png)"></div>
+							</a>
+						</div>
+					</div>
+
+					<div class="row courses_row">
+						<div class="col-lg-10 offset-lg-1">
+							<div class="section_title text-center">
+								<h2>inscribete</h2>
+							</div>
+							<div class="section_subtitle">llenando y enviándonos la información del siguiente
+								formulario, te
+								inscribirás a este curso y recibirás por WhatsApp la confirmación e información
+								necesaria
+								para acceder al curso. </div>
+						</div>
+					</div>
+
+					<!-- FORMULARIO DE INSCRIPCION-->
+					<div class="gral_form_container">
+						<form id="course_form" action="#">
+							<div>
+								<div class="row">
+									<div class="col-lg-6 gral_name_col">
+										<input id="txtNombre" type="text" class="gral_input" placeholder="nombre" required="required">
+									</div>
+									<div class="col-lg-6 gral_name_col">
+										<input id="txtApellido" type="text" class="gral_input" placeholder="apellido" required="required">
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-lg-6 gral_name_col">
+										<input id="txtTelefono" type="phone" name="phone" class="gral_input" placeholder="teléfono" required="required">
+									</div>
+									<div class="col-lg-6 gral_name_col">
+										<input id="txtEmail" type="email" class="gral_input" placeholder="e-mail" required="required">
+									</div>
+								</div>
+							</div>
+							<div>
+								<button id="btnInscribirme" class="gral_button" type="submit">
+									<span>inscribirme</span>
+									<span class="button_arrow">
+										<i class="fa fa-angle-right" aria-hidden="true">
+										</i>
+									</span>
+								</button>
+							</div>
+							<div id="errorDescription" class="alert alert-danger" role="alert" style="display: none;"></div>
+							<div id="succesDescription" class="alert alert-success" role="alert" style="display: none;"></div>
+						</form>
+					</div>
+
+					<div class="row courses_row">
+
+						<!-- Course -->
+						<div class="col-lg-4 col-md-6">
+							<div class="gacetilla">
+								<div class="course_image"><a href="cursos/actual.html"><img
+											src="images/curso/curso_1_2025_690_522.png"
+											alt="Cría y Cuidados de Aves Domésticas"></a></div>
+								<div class="course_body">
+									<div class="course_header d-flex flex-row align-items-center justify-content-start">
+										<div class="gacetilla_tag"><a href="cursos/actual.html">Ver</a></div>
+										<div class="gacetilla_price ml-auto">Modalidad: <span>Curso Online</span></div>
+									</div>
+									<div class="course_title">
+										<h3><a href="cursos/actual.html">Cría y Cuidados de Aves Domésticas</a></h3>
+									</div>
+									<div class="course_text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Magni
+										est, dolores accusantium error iste at alias. Repellat necessitatibus,
+										aspernatur
+										iure, voluptas nobis quidem maxime rem.</div>
+									<div class="course_footer d-flex align-items-center justify-content-start">
+										<div class="course_sales ml-auto"><span>marzo 2025</span></div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-4 col-md-6">
+							<div class="gacetilla">
+								<div class="course_image"><a href="cursos/julio2024.html"><img
+											src="images/curso/profesional_690_522.png"
+											alt="Profesionalización de la Cría"></a></div>
+								<div class="course_body">
+									<div class="course_header d-flex flex-row align-items-center justify-content-start">
+										<div class="gacetilla_tag"><a href="cursos/julio2024.html">Ver</a></div>
+										<div class="gacetilla_price ml-auto">Modalidad: <span>Curso Online</span></div>
+									</div>
+									<div class="course_title">
+										<h3><a href="cursos/julio2024.html">Profesionalización de la Cría</a></h3>
+									</div>
+									<div class="course_text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Magni
+										est, dolores accusantium error iste at alias. Repellat necessitatibus,
+										aspernatur
+										iure, voluptas nobis quidem .</div>
+									<div class="course_footer d-flex align-items-center justify-content-start">
+										<div class="course_sales ml-auto"><span>julio 2024</span></div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-4 col-md-6">
+							<div class="gacetilla">
+								<div class="course_image"><a href="cursos/canto2024.html"><img
+											src="images/curso/canto_690_522.png" alt="Canarios de Canto"></a></div>
+								<div class="course_body">
+									<div class="course_header d-flex flex-row align-items-center justify-content-start">
+										<div class="gacetilla_tag"><a href="cursos/canto2024.html">Ver</a></div>
+										<div class="gacetilla_price ml-auto">Modalidad: <span>Charlas Libres</span>
+										</div>
+									</div>
+									<div class="course_title">
+										<h3><a href="cursos/canto2024.html">Canarios de Canto</a></h3>
+									</div>
+									<div class="course_text">Dentro de la iniciativa de "Charlas Libres para Clubes", el
+										reconocido criador, competidor y juez internacional de canarios de canto Eddie
+										Jimenez de Colombia, desarrolló una capacitación brindanos sus experiencias en
+										la
+										cría, desarrollo y competencias de canarios de canto.</div>
+									<div class="course_footer d-flex align-items-center justify-content-start">
+										<div class="course_sales">
+											<span">septiembre 2024</span>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+
 					</div>
 				</div>
 			</div>
-		</div>
-
-		<!-- Courses -->
-
-		<div class="courses">
-			<div class="container">
-				<!-- Featured Course -->
-				<div class="row">
-					<div class="col-lg-6 featured_col">
-						<div class="featured_content">
-							<div class="featured_title">
-								<h3><a href="cursos/actual.html">Curso de Cría y Cuidado de Aves Domésticase</a></h3>
-							</div>
-							<div class="featured_text">¡Inscripciones Abiertas! 🌟<br>
-								🔍 Detalles del Curso:<br>
-								✅ Metodología: Clases virtuales<br>
-								✅ Libre y gratuito<br>
-								✅ Aprende a criar y cuidar aves de manera responsable<br>
-								✅ Comienzo: Marzo 2025<br>
-								¡No dejes pasar esta oportunidad única de aprender y disfrutar! 🌈✨<br></div>
-							<div class="featured_footer d-flex align-items-center justify-content-start">
-								<div class="featured_sales ml-auto"><span>EN CURSO</span></div>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-6 featured_col">
-						<a href="cursos/actual.html">
-							<div class="featured_background"
-								style="background-image:url(images/curso/curso_actual_690_614.png)"></div>
-						</a>
-					</div>
-				</div>
-
-				<div class="row courses_row">
-					<div class="col-lg-10 offset-lg-1">
-						<div class="section_title text-center">
-							<h2>inscribete</h2>
-						</div>
-						<div class="section_subtitle">llenando y enviándonos la información del siguiente formulario, te
-							inscribirás a este curso y recibirás por WhatsApp la confirmación e información necesaria
-							para acceder al curso. </div>
-					</div>
-				</div>
-
-				<!-- FORMULARIO DE INSCRIPCION-->
-				<div class="gral_form_container">
-					<form action="#" id="course_form" class="course_form">
-						<div>
-							<div class="row">
-								<div class="col-lg-6 gral_name_col">
-									<input type="text" class="gral_input" placeholder="nombre" required="required">
-								</div>
-								<div class="col-lg-6 gral_name_col">
-									<input type="text" class="gral_input" placeholder="apellido" required="required">
-								</div>
-							</div>
-						</div>
-						<div><input type="phone" id="phone" name="phone" class="gral_input" placeholder="teléfono"
-								required="required"></div>
-						<div><input type="email" class="gral_input" placeholder="e-mail" required="required"></div>
-						<button class="gral_button"><span>inscribirme</span><span class="button_arrow"><i
-									class="fa fa-angle-right" aria-hidden="true"></i></span></button>
-					</form>
-				</div>
-
-
-				<div class="row courses_row">
-
-					<!-- Course -->
-					<div class="col-lg-4 col-md-6">
-						<div class="gacetilla">
-							<div class="course_image"><a href="cursos/actual.html"><img src="images/curso/curso_1_2025_690_522.png"
-										alt="Cría y Cuidados de Aves Domésticas"></a></div>
-							<div class="course_body">
-								<div class="course_header d-flex flex-row align-items-center justify-content-start">
-									<div class="gacetilla_tag"><a href="cursos/actual.html">Ver</a></div>
-									<div class="gacetilla_price ml-auto">Modalidad: <span>Curso Online</span></div>
-								</div>
-								<div class="course_title">
-									<h3><a href="cursos/actual.html">Cría y Cuidados de Aves Domésticas</a></h3>
-								</div>
-								<div class="course_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-									est, dolores accusantium error iste at alias. Repellat necessitatibus, aspernatur
-									iure, voluptas nobis quidem maxime rem.</div>
-								<div class="course_footer d-flex align-items-center justify-content-start">
-									<div class="course_sales ml-auto"><span>marzo 2025</span></div>
-								</div>
-
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-4 col-md-6">
-						<div class="gacetilla">
-							<div class="course_image"><a href="cursos/julio2024.html"><img src="images/curso/profesional_690_522.png"
-										alt="Profesionalización de la Cría"></a></div>
-							<div class="course_body">
-								<div class="course_header d-flex flex-row align-items-center justify-content-start">
-									<div class="gacetilla_tag"><a href="cursos/julio2024.html">Ver</a></div>
-									<div class="gacetilla_price ml-auto">Modalidad: <span>Curso Online</span></div>
-								</div>
-								<div class="course_title">
-									<h3><a href="cursos/julio2024.html">Profesionalización de la Cría</a></h3>
-								</div>
-								<div class="course_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-									est, dolores accusantium error iste at alias. Repellat necessitatibus, aspernatur
-									iure, voluptas nobis quidem .</div>
-								<div class="course_footer d-flex align-items-center justify-content-start">
-									<div class="course_sales ml-auto"><span>julio 2024</span></div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-4 col-md-6">
-						<div class="gacetilla">
-							<div class="course_image"><a href="cursos/canto2024.html"><img src="images/curso/canto_690_522.png"
-										alt="Canarios de Canto"></a></div>
-							<div class="course_body">
-								<div class="course_header d-flex flex-row align-items-center justify-content-start">
-									<div class="gacetilla_tag"><a href="cursos/canto2024.html">Ver</a></div>
-									<div class="gacetilla_price ml-auto">Modalidad: <span>Charlas Libres</span></div>
-								</div>
-								<div class="course_title">
-									<h3><a href="cursos/canto2024.html">Canarios de Canto</a></h3>
-								</div>
-								<div class="course_text">Dentro de la iniciativa de "Charlas Libres para Clubes", el
-									reconocido criador, competidor y juez internacional de canarios de canto Eddie
-									Jimenez de Colombia, desarrolló una capacitación brindanos sus experiencias en la
-									cría, desarrollo y competencias de canarios de canto.</div>
-								<div class="course_footer d-flex align-items-center justify-content-start">
-									<div class="course_sales"><span">septiembre 2024</span></div>
-								</div>
-
-							</div>
-						</div>
-					</div>
-
-				</div>
-
-				<!-- Pagination -->
-				<!-- <div class="row">
-				<div class="col">
-					<div class="courses_paginations">
-						<ul>
-							<li class="active"><a href="#">01</a></li>
-							<li><a href="#">02</a></li>
-							<li><a href="#">03</a></li>
-							<li><a href="#">04</a></li>
-							<li><a href="#">05</a></li>
-						</ul>
-					</div>
-				</div>
-			</div> -->
-			</div>
-		</div>
+		</main>
 
 		<!-- Footer -->
 		<footer class="footer">
@@ -235,6 +247,7 @@
 	<script src="plugins/parallax-js-master/parallax.min.js"></script>
 	<script src="js/menu.js"></script>
 	<script src="js/courses.js"></script>
+	<script src="js/common.js"></script>
 	<script src="js/footer.js"></script>
 	<script src="js/header_content.js"></script>
 </body>
