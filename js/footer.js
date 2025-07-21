@@ -15,9 +15,9 @@ $(document).ready(function () {
 
 
 	function setFooter() {
-		// const subfolder = "/ACZO2";
-		// var rootSite = window.location.origin + subfolder;
-		var rootSite = window.location.origin;
+		const subfolder = "/ACZO2";
+		var rootSite = window.location.origin + subfolder;
+		//var rootSite = window.location.origin;
 		console.log(rootSite);
 		$("#footerdiv").load(rootSite + "/footer.html");
 	}
